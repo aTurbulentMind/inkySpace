@@ -1,0 +1,37 @@
+//colors
+
+$textColorMain: rgb(255, 255, 253);
+$backgroundMain:rgb(9, 2, 12);
+$backgroundSecond:#6868acad;
+$highlight:#ece03b;
+$gradient:linear-gradient(90deg, rgb(14, 14, 5) 0%, rgb(19, 48, 51) 35%, rgb(62, 35, 92) 100%);
+
+
+//font stack
+$mainFont: 'Gentium Book Basic', serif; // aux font'Jua', sans-serif
+$altFont: 'Jua', sans-serif;
+
+// mixins
+
+@mixin greenBack() {
+    background: rgba(56, 229, 42, 0.15);
+    box-shadow: 0 8px 24px 0 rgba(31, 105, 135, 0.137);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: $textColorMain;
+}
+
+
+
+// set txt color
+//@function set-text-color($color) {
+//    @if(lightness($color) > 70) {
+//        @return #333;
+//    }
+//
+//    @else {
+//        @return $textColorMain;
+//    }
+//}

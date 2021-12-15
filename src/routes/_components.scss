@@ -1,0 +1,33 @@
+@import 'vari';
+
+    * { 
+        padding:0;
+        margin: 0;
+    }
+ 
+body {
+        background: rgb(7, 3, 10);
+        color: $textColorMain;
+        font-family: $mainFont;
+    }
+
+
+    a {
+        text-decoration: none;
+        color: $highlight;
+    }
+
+    h1 {
+        margin:25% 17%;
+    }
+
+    h2 {
+        margin:20% 17% 0 17%;
+    }
+
+    p {
+        font-size: 3vh;
+        margin: 7%;
+        line-height: 1.5;
+    }
+
