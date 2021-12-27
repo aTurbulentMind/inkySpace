@@ -19,15 +19,76 @@ body {
 
     h1 {
         margin:25% 17%;
+        font-size: 6vh;
     }
 
     h2 {
         margin:20% 17% 0 17%;
+        font-size: 5vh;
     }
 
     p {
         font-size: 3vh;
-        margin: 7%;
+        margin: 15% 7%;
         line-height: 1.5;
     }
+
+    //&:hover {
+    //    @include glassBack();
+    //    transition: 0.15s;
+    //}
+
+
+    // gallery
+
+
+      .container {
+          width: 100%;
+          display: grid;
+          grid-auto-flow: dense;
+          grid-template: "1fr 1fr 1fr 1fr 1fr"33.33vh "1fr 1fr 1fr 1fr 1fr"33.33vh "1fr 1fr 1fr 1fr 1fr"33.33vh;
+          gap: 15px;
+
+          .box {
+              position: relative;
+
+              img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+
+
+              }
+          }
+      }
+
+      .a {
+          grid-row: span 2;
+      }
+
+      .b,
+      .f,
+      .h,
+      .j {
+          grid-column: span 2;
+      }
+
+      @media (max-width: 991px) {
+          .container {
+              grid-template: "1fr 1fr 1fr"250px "1fr 1fr 1fr"250px "1fr 1fr 1fr "250px "1fr 1fr 1fr"250px "1fr 1fr 1fr "250px;
+          }
+      }
+
+      @media (max-width: 768px) {
+          .container {
+              grid-template: "1fr 1fr"250px "1fr 1fr"250px "1fr 1fr "250px "1fr 1fr"250px "1fr 1fr"250px "1fr 1fr"250px "1fr 1fr"250px;
+          }
+
+          .h {
+              grid-column: span 1;
+          }
+      }
 

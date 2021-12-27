@@ -14,13 +14,15 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus doloribus corporis quisquam perspiciatis? Expedita dolore unde ullam quisquam, repellat consectetur? Veniam in debitis hic quisquam!</p>
 
     <div class="icom">
-        <h2>Meet: This Person</h2>
-        <img src="/src/assets/img/purp.png" alt="">
+        <a href="/staff"> <h2>Meet Our People</h2>
+        <img src="/src/assets/img/purp.png" alt=""></a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sapiente voluptate. Nobis quae aliquid vitae rerum necessitatibus.</p>
     </div>
 
     <div class="icom">
-        <h2>Meet: This Person</h2>
-        <img src="/src/assets/img/purp.png" alt="">
+        <a href="/story"> <h2>Learn Our Story</h2>
+        <img src="/src/assets/img/purp.png" alt=""></a>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet atque accusantium at dolorum ipsum incidunt.</p>
     </div>
 
     
@@ -29,7 +31,7 @@
     <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus doloribus corporis quisquam perspiciatis? Expedita dolore unde ullam quisquam, repellat consectetur? Veniam in debitis hic quisquam!" &nbsp; &nbsp; &nbsp;  </p>
     
     <h2>That Lady</h2>
-    <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta alias quaerat doloremque! Qui debitis ad similique quibusdam recusandae consequuntur quaerat vitae illo!" &nbsp; &nbsp; &nbsp; </p>
+    <p style="margin-bottom: 30%;">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta alias quaerat doloremque! Qui debitis ad similique quibusdam recusandae consequuntur quaerat vitae illo!" &nbsp; &nbsp; &nbsp; </p>
 </body>
 
 
@@ -37,14 +39,20 @@
 
     @import 'components';
 
-    
+    h1, h2 { 
+        font-weight: 400;
+    }
+
+
 .art-banner {
     height: 100vh;
     display: grid;
+    background:$backgroundMain;
     grid-template-columns: 20px 1fr 1fr 1fr 20px;
     grid-template-rows: 20px 1fr 1fr 1fr 20px;
     margin: 5px 0;
-    
+    z-index: 99;
+
     a {
         font-size: 3vh;
     }
@@ -117,6 +125,7 @@
 
 .icom {
  
+    
 
     img{
         max-width: 100%;

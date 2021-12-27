@@ -3,6 +3,7 @@
 $textColorMain: rgb(255, 255, 253);
 $backgroundMain:rgb(9, 2, 12);
 $backgroundSecond:#6868acad;
+$extra:#48a4c0;
 $highlight:#ece03b;
 $gradient:linear-gradient(90deg, rgb(14, 14, 5) 0%, rgb(19, 48, 51) 35%, rgb(62, 35, 92) 100%);
 
@@ -13,14 +14,13 @@ $altFont: 'Jua', sans-serif;
 
 // mixins
 
-@mixin greenBack() {
-    background: rgba(56, 229, 42, 0.15);
-    box-shadow: 0 8px 24px 0 rgba(31, 105, 135, 0.137);
-    backdrop-filter: blur(3.5px);
-    -webkit-backdrop-filter: blur(3.5px);
+@mixin glassBack() {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 3px 12px 3px $backgroundSecond;
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    color: $textColorMain;
 }
 
 
