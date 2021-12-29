@@ -5,8 +5,8 @@
   <div class="banner-text">Welcome</div>
   
   <div class="coaButt2">
-    <p><a href="/test">FB</a></p>
-    <p> <a href="/test">IG</a></p>
+    <p><a href="https://www.facebook.com/OATHBremerton/">FB</a></p>
+    <p> <a href="https://www.instagram.com/OATHBremerton/">IG</a></p>
   </div>
 </div>
 
@@ -42,6 +42,8 @@
     h1, h2 { 
         font-weight: 400;
     }
+    
+    
 
 
 .art-banner {
@@ -54,7 +56,7 @@
     z-index: 99;
 
     a {
-        font-size: 3vh;
+        font-size: 3vw;
     }
 
     &::before {
@@ -83,13 +85,16 @@
 .art-banner-bg {
     background-image: url(/src/assets/img/blackLogo.jpg);
     background-repeat: no-repeat;
-    background-size: 425px 425px;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: 90%;
     opacity: 0.15;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
 
     img {
         width: 100%;
+        padding: 15%;
     }
 }
 
@@ -115,7 +120,7 @@
     width: 20vw;
     height: 15vw;
     border-radius: 50%;
-    transform: rotate(15deg);
+    transform: rotate(7deg);
 
     p {
     margin:auto;
@@ -131,5 +136,23 @@
         max-width: 100%;
     }
 }
+
+@media (min-width:750px){
+    .art-banner-bg {
+    background-size: 70%;
+}
+
+p {
+              margin-left: 15%;
+          }
+}
+
+@media (min-width:1000px) {
+ .art-banner-bg {
+    background-size: 50%;
+}
+      }
+
+
 
 </style>

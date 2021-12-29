@@ -7,7 +7,7 @@
 <div class="form">
    <h3>Our contact form is the best way to reach us:</h3>
     <form action="https://formsubmit.co/joelkrivers@yahoo.com" method="POST">
-     <input type="hidden" name="_subject" value="Hello friend">   
+     <input type="hidden" name="_subject" value="New client submission">   
      <p>Artist of choice:</p>
      <input type="radio" id="bonnie" name="pref_artist" value="Bonnie">
      <label for="bonnie">Bonnie</label>
@@ -23,10 +23,10 @@
      <input type="hidden" name="_next" value="https://tender-benz-1741cd.netlify.app/">
      <br><br>
      <p>Tell us about your tattoo:</p>
-     <textarea name="t1" id="plan_for_art" cols="35" rows="5"></textarea>
+     <textarea name="t1" id="plan_for_art" cols="35" rows="5" required></textarea>
      <br><br>
      <p>Side note:</p>
-     <input type="text" rows=4 cols=20 name="message" placeholder="Allergies or something"  required>
+     <input type="text" rows=4 cols=20 name="message" placeholder="Allergies or something">
      <br><br>
    <!--  <p>A picture or few can help form an idea for your piece (but is not required):</p>
      <input type="file" class="img-input" onchange="readURL(this)" accept="Image/"/>
@@ -36,8 +36,13 @@
 </div>
 
     <div class="social">
-       <h2>Or you can find us on Facebook</h2>
+       <h2>You can find us on Facebook</h2>
     <a href="https://www.facebook.com/OATHBremerton/">  <img src="/src/assets/img/fbBanner.png" alt=""></a> 
+    </div>
+
+     <div class="social">
+       <h2>Or Instagram</h2>
+    <a href="https://www.instagram.com/OATHBremerton/">  <img src="/src/assets/img/igBanner.png" alt=""></a> 
     </div>
 
 
@@ -50,7 +55,7 @@
 
    .form {
       @include glassBack();
-      margin: 13% 13% 25% 13%;
+      margin: 0 13% 25% 13%;
       padding: 10%;
       contain: content;
    }
@@ -61,7 +66,7 @@
 
    h3{
       font-weight: 100;
-      font-size: 3.5vh;
+      font-size: 3.5vw;
       margin-bottom: 15%;
    }
 
@@ -95,5 +100,13 @@
     border: 1px solid $backgroundSecond;
     border-radius:2%;
  }
+
+  @media (min-width:750px) {
+
+          img {
+             width: 85%;
+             margin:4% 0 10% 10%;
+          }
+      }
 
 </style>

@@ -33,7 +33,7 @@
       </li>
 
       <li class="nav-item">
-        <a href="/" class="nav-link">
+        <a href="tel: +3606277347" class="nav-link">
          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
 			<path d="M26 29h-.2C6.2 27.9 3.4 11.3 3 6.2C2.9 4.6 4.1 3.1 5.8 3h5.5c.8 0 1.6.5 1.9 1.3L14.6 8c.3.7.1 1.6-.4 2.2l-2.1 2.1c.7 3.9 3.7 6.9 7.6 7.6l2.2-2.1c.6-.6 1.4-.7 2.2-.4l3.8 1.5c.7.3 1.2 1 1.2 1.9V26c-.1 1.7-1.4 3-3.1 3zM6 5c-.6 0-1 .4-1 1v.1C5.5 12 8.4 26 25.9 27c.6 0 1-.4 1.1-.9V20.7l-3.8-1.5l-2.9 2.9l-.4-.1c-8.7-1.1-9.9-9.8-9.9-9.9l-.1-.5l2.8-2.9L11.3 5H6z" fill="currentColor" class="fa-secondary" /><path fill="currentColor" class="fa-primary" d="M20 4v2h4.6L18 12.6l1.4 1.4L26 7.4V12h2V4z"/></svg>
           <span class="link-text">Call</span>
@@ -44,7 +44,7 @@
         <a href="/staff" class="nav-link">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
 			<g fill="currentColor" class="fa-primary"><path d="M11 6a3 3 0 1 1-6 0a3 3 0 0 1 6 0z"/><path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z" class="fa-secondary" /></g></svg>
-          <span class="link-text">People</span>
+          <span class="link-text">Staff</span>
         </a>
       </li>
 
@@ -98,7 +98,7 @@
       <li class="nav-item">
         <a href="/" class="nav-link">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586l6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z" fill="currentColor" class="fa-secondary"/></svg>
-          <span class="link-text">Story</span>
+          <span class="link-text">Home</span>
         </a>
       </li>
     </ul>
@@ -168,6 +168,7 @@ svg {
 .link-text {
   display: none;
   margin-left: 1rem;
+  font-size: 2.5vw;
 }
 
 .fa-primary {

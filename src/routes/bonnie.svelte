@@ -8,7 +8,6 @@
         <li>Age: XX</li>
         <li>Years in the industry: XX</li>
         <li>Specialty: Awesome</li>
-        <li><a href="/gallery">Gallery</a></li>
         <li><a href="/">Social Media</a></li>
     </ul>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nostrum tempora? Similique natus optio necessitatibus quis adipisci rerum dicta quaerat.</p>
@@ -42,8 +41,16 @@
     ul{
         list-style: none;
         margin: 7%;
-        font-size: 3vh;
+        font-size: 3vw;
     }
+
+     @media (min-width:750px) {
+
+
+          ul {
+              margin-left: 15%;
+          }
+      }
 
 
 

@@ -19,16 +19,16 @@ body {
 
     h1 {
         margin:25% 17%;
-        font-size: 6vh;
+        font-size: 6vw;
     }
 
     h2 {
         margin:20% 17% 0 17%;
-        font-size: 5vh;
+        font-size: 5vw;
     }
 
     p {
-        font-size: 3vh;
+        font-size: 3.5vw;
         margin: 15% 7%;
         line-height: 1.5;
     }
@@ -48,6 +48,8 @@ body {
           grid-auto-flow: dense;
           grid-template: "1fr 1fr 1fr 1fr 1fr"33.33vh "1fr 1fr 1fr 1fr 1fr"33.33vh "1fr 1fr 1fr 1fr 1fr"33.33vh;
           gap: 15px;
+          overflow-Y: hidden;
+          margin-bottom: 2%;
 
           .box {
               position: relative;
@@ -80,6 +82,10 @@ body {
           .container {
               grid-template: "1fr 1fr 1fr"250px "1fr 1fr 1fr"250px "1fr 1fr 1fr "250px "1fr 1fr 1fr"250px "1fr 1fr 1fr "250px;
           }
+
+          p {
+              font-size:2.5vw
+          }
       }
 
       @media (max-width: 768px) {
@@ -90,5 +96,43 @@ body {
           .h {
               grid-column: span 1;
           }
+
+          .art-banner-bg {
+              
+              background-size: 60%;
+              
+          }
+      }
+
+      @media (min-width:750px) {
+
+          p {
+              margin-left: 15%;
+          }
+
+          ul {
+              margin-left: 15%;
+          }
+
+          .container{
+              width: 90%;
+              margin-left:10%;
+          }
+      }
+
+      @media (min-width:1000px) {
+
+        h1 {
+            font-size:5vw;
+        }
+
+        h2 {
+            font-size:4vw;
+        }
+
+          p {
+              font-size: 2.5vw;
+          }
+
       }
 
