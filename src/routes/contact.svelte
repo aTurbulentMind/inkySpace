@@ -37,12 +37,12 @@
 
     <div class="social">
        <h2>You can find us on Facebook</h2>
-    <a href="https://www.facebook.com/OATHBremerton/">  <img src="/src/assets/img/fbBanner.png" alt=""></a> 
+    <a href="https://www.facebook.com/OATHBremerton/">  <img src="img/fbBanner.png" alt=""></a> 
     </div>
 
      <div class="social">
        <h2>Or Instagram</h2>
-    <a href="https://www.instagram.com/OATHBremerton/">  <img src="/src/assets/img/igBanner.png" alt=""></a> 
+    <a href="https://www.instagram.com/OATHBremerton/">  <img src="img/igBanner.png" alt=""></a> 
     </div>
 
 

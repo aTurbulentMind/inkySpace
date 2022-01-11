@@ -15,13 +15,13 @@
 
     <div class="icom">
         <a href="/staff"> <h2>Meet Our People</h2>
-        <img src="/src/assets/img/purp.png" alt=""></a>
+        <img src="img/purp.png" alt=""></a>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sapiente voluptate. Nobis quae aliquid vitae rerum necessitatibus.</p>
     </div>
 
     <div class="icom">
         <a href="/story"> <h2>Learn Our Story</h2>
-        <img src="/src/assets/img/purp.png" alt=""></a>
+        <img src="img/purp.png" alt=""></a>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet atque accusantium at dolorum ipsum incidunt.</p>
     </div>
 

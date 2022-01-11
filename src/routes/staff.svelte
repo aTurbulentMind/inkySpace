@@ -1,22 +1,22 @@
 <body>
     
     <a href="/bonnie">
-    <img src="/src/assets/img/purp.png" alt="">
+    <img src="img/purp.png" alt="">
 
     <h1>Bonnie <br> </h1></a>
     
     <a href="/">
-    <img src="/src/assets/img/purp.png" alt="">
+    <img src="img/purp.png" alt="">
 
     <h1>Jessie <br> </h1></a>
     
     <a href="/">
-    <img src="/src/assets/img/purp.png" alt="">
+    <img src="img/purp.png" alt="">
 
     <h1>This <br>  Person</h1></a>
     
     <a href="/" >
-    <img src="/src/assets/img/purp.png" alt="">
+    <img src="img/purp.png" alt="">
 
     <h1 style="margin-bottom: 120px;">That <br>  Person</h1></a>
     
