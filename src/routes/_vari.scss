@@ -3,10 +3,13 @@
 $textColorMain: rgb(255, 255, 253);
 $backgroundMain:rgb(9, 2, 12);
 $backgroundSecond:#6868acad;
+$backgroundThird:rgb(19, 4, 26);
 $extra:#48a4c0;
 $highlight:#ece03b;
 $gradient:linear-gradient(90deg, rgb(14, 14, 5) 0%, rgb(19, 48, 51) 35%, rgb(62, 35, 92) 100%);
 
+
+$transitSpeed: 0.3s;
 
 //font stack
 $mainFont: 'Gentium Book Basic', serif; // aux font'Jua', sans-serif

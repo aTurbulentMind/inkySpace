@@ -1,11 +1,11 @@
-<body>
-   <slot />
 
-	<nav class="navbar">
+<body>
+
+	<nav sveltekit:prefetch class="navbar">
     <ul class="navbar-nav">
       <li class="logo">
         <a href="/" class="nav-link">
-          <span class="link-text logo-text">OATH</span>
+          <span class="link-text logo-text">Oath</span>
           <svg
             aria-hidden="true"
             focusable="false"
@@ -33,10 +33,10 @@
       </li>
 
       <li class="nav-item">
-        <a href="tel: +3606277347" class="nav-link">
+        <a href="tel: +8005528397" class="nav-link">
          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
 			<path d="M26 29h-.2C6.2 27.9 3.4 11.3 3 6.2C2.9 4.6 4.1 3.1 5.8 3h5.5c.8 0 1.6.5 1.9 1.3L14.6 8c.3.7.1 1.6-.4 2.2l-2.1 2.1c.7 3.9 3.7 6.9 7.6 7.6l2.2-2.1c.6-.6 1.4-.7 2.2-.4l3.8 1.5c.7.3 1.2 1 1.2 1.9V26c-.1 1.7-1.4 3-3.1 3zM6 5c-.6 0-1 .4-1 1v.1C5.5 12 8.4 26 25.9 27c.6 0 1-.4 1.1-.9V20.7l-3.8-1.5l-2.9 2.9l-.4-.1c-8.7-1.1-9.9-9.8-9.9-9.9l-.1-.5l2.8-2.9L11.3 5H6z" fill="currentColor" class="fa-secondary" /><path fill="currentColor" class="fa-primary" d="M20 4v2h4.6L18 12.6l1.4 1.4L26 7.4V12h2V4z"/></svg>
-          <span class="link-text">Call</span>
+          <span class="link-text">+1(800)552-8397</span>
         </a>
       </li>
 
@@ -59,7 +59,7 @@
         <a href="/story" class="nav-link">
           <svg 
 		  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20"><path fill-rule="evenodd" clip-rule="evenodd" d="M14 5h-4v2h4V5zm0 3h-4v1h4V8zM9 5H6v4h3V5zm0 6h5v-1H9v1zm3 2h2v-1h-2v1zm2 1H6v1h8v-1zm-3-2H6v1h5v-1zm-3-2H6v1h2v-1zm9-9H3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 16H4V3h12v14z" fill="currentColor" class="fa-secondary"/></svg>
-          <span class="link-text">Story</span>
+          <span class="link-text">Our Story</span>
         </a>
       </li>
 
@@ -90,7 +90,7 @@
               ></path>
             </g>
           </svg>
-          <span class="link-text">Contact</span>
+          <span class="link-text">Contact </span>
         </a>
       </li>
 
@@ -104,7 +104,7 @@
     </ul>
   </nav>
 
-
+<slot />
 
 </body>
 
@@ -112,12 +112,25 @@
 	@import 'components';
 	
 
+  .label {
+		overflow-y:hidden;
+		margin: 4%;
+
+	}
 	
 .navbar {
+  
+  background:$backgroundMain;
+  box-shadow: 0 3px 8px 3px $backgroundSecond;
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
   position: fixed;
-  background-color: $backgroundMain;
+  right: 0;
   transition: width 600ms ease;
   overflow: hidden;
+  z-index: 5;
 }
 
 .navbar-nav {
@@ -141,22 +154,36 @@
 .nav-link {
   display: flex;
   align-items: center;
-  height: 5rem;
-  color: $backgroundSecond;
+  height: 4rem;
+  padding: 3%;
+  color: $textColorMain;
+  font-weight: 400;
   text-decoration: none;
-  filter: grayscale(100%) opacity(0.7);
-  transition: var(--transition-speed);
+  filter: grayscale(70%) opacity(0.7);
+  transition: 0.3s;
 
   &:hover {
   filter: grayscale(0%) opacity(1);
   background: $backgroundSecond;
-  color: $highlight;
+  color: $textColorMain;
 }
 
-img {
-  width: 10%;
-  height: 10%;
-}
+.nav-extra {
+        position: absolute;
+        top: 66px;
+        right: 0;
+        width: 180px;
+        display: none;
+        z-index: 88888;
+    }
+
+.nav-extra li a {
+        padding: 10px;
+        background: #fff;
+        display:none;
+    }
+
+
 
 svg {
   min-width: 2rem;
@@ -168,20 +195,22 @@ svg {
 .link-text {
   display: none;
   margin-left: 1rem;
-  font-size: 2.5vw;
+  font-size: 2vw;
+  padding: 1%;
 }
 
+
 .fa-primary {
-  color: $extra;
+  color: $textColorMain;
 }
 
 .fa-secondary {
-  color: $highlight;
+  color: $extra;
 }
 
 .fa-primary,
 .fa-secondary {
-  transition: var(--transition-speed);
+  transition: $transitSpeed;
 }
 
 .logo {
@@ -189,29 +218,30 @@ svg {
   text-transform: uppercase;
   margin-bottom: 1rem;
   text-align: center;
-  color: var(--text-secondary);
-  background: var(--bg-secondary);
+  color: $textColorMain;
+  background: $backgroundSecond;
   font-size: 1.5rem;
   letter-spacing: 0.3ch;
   width: 100%;
 
   svg {
-  transform: rotate(0deg);
-  transition: var(--transition-speed);
+  transform: rotate(180deg);
+  transition: $transitSpeed;
 }
 }
 
 
 .logo-text
 {
+  font-style: italic;
   display: inline;
   position: absolute;
   left: -999px;
-  transition: var(--transition-speed);
+  transition: $transitSpeed;
 }
 
 .navbar:hover .logo svg {
-  transform: rotate(-180deg);
+  transform: rotate(0deg);
 }
 
 /* Small screens */
@@ -220,6 +250,7 @@ svg {
     bottom: 0;
     width: 100vw;
     height: 5rem;
+    background: $backgroundThird;
   }
 
   .logo {
@@ -232,7 +263,33 @@ svg {
 
   .nav-link {
     justify-content: center;
+    color: $textColorMain;
+
+    &:hover{
+      background-color: $backgroundSecond;
+    }
+
+    svg {
+  max-width: 1.25rem;
+  margin: 0 .25rem;
+}
   }
+
+  .nav-extra li a {
+        padding: 2px;
+        background: #fff;
+        display:none;
+    
+
+}
+
+  .fa-primary {
+  color: $extra;
+}
+
+.fa-secondary {
+  color: $textColorMain;
+}
 
   main {
     margin: 0;
@@ -264,6 +321,10 @@ svg {
   {
     left: 0px;
   }
+
+  .link-text {
+            font-size: 1.5vw;
+        }
 }
 
 	

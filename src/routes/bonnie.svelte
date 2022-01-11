@@ -44,13 +44,11 @@
         font-size: 3vw;
     }
 
-     @media (min-width:750px) {
-
-
-          ul {
-              margin-left: 15%;
-          }
-      }
+    @media (max-width: 768px) {
+        ul{
+            font-size: 3.5vw;
+        }
+    }
 
 
 
