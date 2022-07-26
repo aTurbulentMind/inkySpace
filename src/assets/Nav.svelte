@@ -1,4 +1,4 @@
-<nav sveltekit:prefetch class="navbar">
+<nav class="navbar">
 	<ul class="navbar-nav">
 		<li class="logo">
 			<a href="/" class="nav-link">

@@ -1,6 +1,6 @@
 <script>
-	import Nav from '/src/assets/Nav.svelte';
-	import Footer from '/src/assets/Footer.svelte';
+	import Nav from '../assets/Nav.svelte';
+	import Footer from '../assets/Footer.svelte';
 </script>
 
 <body>
