@@ -198,7 +198,9 @@
 		display: none;
 		margin-left: 1rem;
 		font-size: 2vw;
+		font-weight: 500;
 		padding: 1%;
+		color: $textColorMain;
 	}
 
 	.fa-primary {

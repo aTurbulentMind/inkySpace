@@ -83,6 +83,7 @@
 
 					a {
 						color: $textColorMain;
+						text-decoration: underline;
 					}
 				}
 			}
