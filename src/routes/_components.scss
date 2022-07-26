@@ -6,7 +6,7 @@
 }
 
 body {
-    background: rgb(7, 3, 10);
+    background: $backgroundMain;
     color: $textColorMain;
     font-family: $mainFont;
 }
@@ -19,11 +19,13 @@ a {
 h1 {
     margin: 7%;
     font-size: 3vw;
+    font-weight: 400;
 }
 
 h2 {
     margin: 7%;
     font-size: 2.5vw;
+    font-weight: 400;
 }
 
 h3 {
@@ -53,7 +55,7 @@ p {
     grid-template: "1fr 1fr 1fr 1fr 1fr"33.33vh "1fr 1fr 1fr 1fr 1fr"33.33vh "1fr 1fr 1fr 1fr 1fr"33.33vh;
     gap: 2%;
     overflow-y: hidden;
-    margin-bottom: 2%;
+    margin-bottom: 12%;
 
     .box {
         position: relative;

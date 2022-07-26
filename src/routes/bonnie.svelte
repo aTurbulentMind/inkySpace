@@ -40,14 +40,14 @@
 	@import 'components';
 
 	img {
-		width: 100%;
-		margin-top: 7%;
+		width: 80%;
+		margin-top: 7% 10%;
 	}
 
 	ul {
 		list-style: none;
-		margin: 7%;
-		font-size: 3vw;
+		margin: 7% 25%;
+		font-size: 2vw;
 	}
 
 	@media (max-width: 768px) {
