@@ -1,25 +1,29 @@
 //colors
 
 $textColorMain: rgb(255, 255, 253);
-$backgroundMain:rgb(9, 2, 12);
-$backgroundSecond:#6868acad;
-$backgroundThird:rgb(19, 4, 26);
+$backgroundMain:#02040c;
+$backgroundSecond:#a78302;
+$backgroundThird:rgb(4, 7, 26);
 $extra:#48a4c0;
 $highlight:#ece03b;
-$gradient:linear-gradient(90deg, rgb(14, 14, 5) 0%, rgb(19, 48, 51) 35%, rgb(62, 35, 92) 100%);
+$gradient:linear-gradient(0deg, rgb(12, 9, 2) 0%, rgb(26, 19, 4) 15%, #a78302 100%);
 
 
+//components
+$mainShadow:0 3px 12px 5px #f4b24770;
 $transitSpeed: 0.3s;
 
 //font stack
-$mainFont: 'Gentium Book Basic', serif; // aux font'Jua', sans-serif
-$altFont: 'Jua', sans-serif;
+$mainFont: 'Gentium Book Basic',
+serif; // aux font'Jua', sans-serif
+$altFont: 'Jua',
+sans-serif;
 
 // mixins
 
 @mixin glassBack() {
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 3px 12px 3px $backgroundSecond;
+    background: #ac936844;
+    box-shadow: $mainShadow;
     backdrop-filter: blur(1.5px);
     -webkit-backdrop-filter: blur(1.5px);
     border-radius: 10px;

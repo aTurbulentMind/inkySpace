@@ -1,143 +1,171 @@
 @import 'vari';
 
-    * { 
-        padding:0;
-        margin: 0;
-    }
- 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
-        background: rgb(7, 3, 10);
-        color: $textColorMain;
-        font-family: $mainFont;
+    background: rgb(7, 3, 10);
+    color: $textColorMain;
+    font-family: $mainFont;
+}
+
+a {
+    text-decoration: none;
+    color: $highlight;
+}
+
+h1 {
+    margin: 7%;
+    font-size: 3vw;
+}
+
+h2 {
+    margin: 7%;
+    font-size: 2.5vw;
+}
+
+h3 {
+    margin: 7%;
+    font-size: 2.25vw;
+}
+
+p {
+    font-size: 1.75vw;
+    margin: 7%;
+    line-height: 1.5;
+}
+
+//&:hover {
+//    @include glassBack();
+//    transition: 0.15s;
+//}
+
+
+// gallery
+
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template: "1fr 1fr 1fr 1fr 1fr"33.33vh "1fr 1fr 1fr 1fr 1fr"33.33vh "1fr 1fr 1fr 1fr 1fr"33.33vh;
+    gap: 2%;
+    overflow-Y: hidden;
+    margin-bottom: 2%;
+
+    .box {
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+
+        }
+    }
+}
+
+.a {
+    grid-row: span 2;
+}
+
+.b,
+.f,
+.h,
+.j {
+    grid-column: span 2;
+}
+
+@media (max-width: 991px) {
+    .container {
+        grid-template: "1fr 1fr 1fr"250px "1fr 1fr 1fr"250px "1fr 1fr 1fr "250px "1fr 1fr 1fr"250px "1fr 1fr 1fr "250px;
     }
 
-    a {
-        text-decoration: none;
-        color: $highlight;
+    p,
+    h1,
+    h2,
+    h3 {
+        margin: 13%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template: "1fr 1fr"250px "1fr 1fr"250px "1fr 1fr "250px "1fr 1fr"250px "1fr 1fr"250px "1fr 1fr"250px "1fr 1fr"575px;
+
+        margin-bottom: 30%;
+    }
+
+    .h {
+        grid-column: span 1;
+    }
+
+    .art-banner-bg {
+
+        background-size: 60%;
+
     }
 
     h1 {
-        margin: 7%;
-        font-size: 3vw;
+        font-size: 4.5vw;
+        margin: 15% 12%;
     }
 
     h2 {
-        margin: 7%;
-        font-size: 2.5vw;
+        font-size: 4.25vw;
+        margin: 15% 12%;
     }
 
     h3 {
-        margin: 7%;
-        font-size: 2.25vw;
+        font-size: 3.5vw;
+        margin: 15% 12%;
     }
 
     p {
-        font-size: 1.75vw;
-        margin: 7%;
-        line-height: 1.5;
+        margin: 15% 12%;
+        font-size: 3.75vw;
     }
 
-    //&:hover {
-    //    @include glassBack();
-    //    transition: 0.15s;
-    //}
+    a {
+        font-size: 3.25vw;
+        margin: 17% 0;
+    }
 
 
-    // gallery
+}
 
+@media (min-width: 991px) {
 
-      .container {
-          width: 100%;
-          display: grid;
-          grid-auto-flow: dense;
-          grid-template: "1fr 1fr 1fr 1fr 1fr"33.33vh "1fr 1fr 1fr 1fr 1fr"33.33vh "1fr 1fr 1fr 1fr 1fr"33.33vh;
-          gap: 2%;
-          overflow-Y: hidden;
-          margin-bottom: 2%;
+    h1 {
+        font-size: 2.5vw;
+        margin: 10% 25%;
+    }
 
-          .box {
-              position: relative;
+    h2 {
+        font-size: 2.25vw;
+        margin: 10% 25%;
+    }
 
-              img {
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
+    h3 {
+        font-size: 2vw;
+        margin: 10% 25%;
+    }
 
+    p {
+        margin: 10% 25%;
+        font-size: 1.5vw;
+    }
 
-              }
-          }
-      }
+    a {
+        font-size: 1.5vw;
+        margin: 17% 0;
+    }
 
-      .a {
-          grid-row: span 2;
-      }
-
-      .b,
-      .f,
-      .h,
-      .j {
-          grid-column: span 2;
-      }
-
-      @media (max-width: 991px) {
-          .container {
-              grid-template: "1fr 1fr 1fr"250px "1fr 1fr 1fr"250px "1fr 1fr 1fr "250px "1fr 1fr 1fr"250px "1fr 1fr 1fr "250px;
-          }
-
-          p,
-          h1,
-          h2,
-          h3 {
-              margin: 13%;
-          }
-
-      }
-
-      @media (max-width: 768px) {
-          .container {
-              grid-template: "1fr 1fr"250px "1fr 1fr"250px "1fr 1fr "250px "1fr 1fr"250px "1fr 1fr"250px "1fr 1fr"250px "1fr 1fr"575px;
-
-              margin-bottom: 30%;
-          }
-
-          .h {
-              grid-column: span 1;
-          }
-
-          .art-banner-bg {
-              
-              background-size: 60%;
-              
-          }
-
-          h1 {
-              font-size: 4.5vw;
-              margin: 15% 12%;
-          }
-
-          h2 {
-              font-size: 4.25vw;
-              margin: 15% 12%;
-          }
-
-          h3 {
-              font-size: 3.5vw;
-              margin: 15% 12%;
-          }
-
-          p {
-              margin: 15% 12%;
-              font-size: 3.75vw;
-          }
-
-          a {
-              font-size: 3.25vw;
-              margin: 17% 0;
-          }
-
-
-      }
-
+}
